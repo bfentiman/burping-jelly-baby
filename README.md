@@ -6,11 +6,10 @@ You will learn how to turn a jelly baby into an input device for your Raspberry 
 
 ## What you will need
 
-As well as a Raspberry Pi and all the essential peripherals, you'll need:
+As well as a Raspberry Pi (connected to the internet) and all the essential peripherals, you'll need:
 
 - Speakers or headphones
-- Two metal paper clips or dress pins
-- Two *female-to-female* jumper wires
+- Two *male-to-female* jumper wires
 - A jelly baby
 
 ## The worksheet
