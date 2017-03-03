@@ -28,15 +28,11 @@ You'll see pins labelled as 3V3, 5V, GND, GP2, GP3, and so on:
 
 ## Wiring up the jelly baby
 
-1. Take two metal paper clips (or pins if you're using them) and unfold them to make a straight wire.
+1. Take a male-to-female jumper wire and push the pin end into the jelly baby.
 
-1. Take a female-to-female jumper lead and push the paper clip wire into one of the ends.
+1. Do the same with the other wire, making sure they are close enough inside the jelly baby but not touching
 
-1. Do the same to the other wire, so that you have two identical jumper cables with paper clip wires in one end.
-
-1. Insert the paper clips into a jelly baby, so that they're close to each other but not touching.
-
-1. Now attach the free ends of the jumper leads to `GPIO 3` and any `GND` pin.
+1. Now attach the free ends of the jumper leads to `GPIO 17` and any `GND` pin.
 
 ## Sound of a burp!
 
@@ -48,7 +44,11 @@ So far, you've created your input device and have your Raspberry Pi set up and r
     mkdir jellybaby
     ```
 
-1. Enter the folder with `cd jellybaby`.
+1. Enter the folder with 
+
+    ```bash
+    cd jellybaby
+    ```
 
     We're going to need a *burping* sample sound file for this project. You could find your own one online, or use the one provided in the next step.
 
@@ -88,7 +88,7 @@ The final step to make your jelly baby burp is to write a program in Python. The
 1. Next, you need to tell your program which GPIO pin the jelly baby is attached to:
 
     ``` python
-    jelly_baby = Button(3)
+    jelly_baby = Button(17)
     ```
 
 1. You also need to initialise `pygame` and import the sound into your program:
